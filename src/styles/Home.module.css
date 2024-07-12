@@ -6,6 +6,15 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.principal_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 6rem; */
+  min-height: 100vh;
+  background-color: #ffffff;
+}
 
 .description {
   display: inherit;
