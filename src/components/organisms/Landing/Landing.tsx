@@ -37,10 +37,10 @@ export function Landing(): React.JSX.Element {
             
             src="https://www.youtube.com/embed/inRzHtiBz8Q"
             title="Tlajomulco SIER Vol  2 8"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           />
           <div className={styles.colors_container}>
             <div className={styles.yellow}></div>
