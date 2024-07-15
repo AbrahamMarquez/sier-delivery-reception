@@ -5,6 +5,9 @@ import Button from '@/components/molecules/Button/Button/Button'
 import { Menu } from 'primereact/menu'
 import Image from 'next/image'
 import imgPlace from '@/../public/images/navbar/tlajo_gris.png'
+import hambur from '@/../public/images/navbar/hamburguer.svg'
+import back from '@/../public/images/navbar/back.svg'
+import { Sidebar } from 'primereact/sidebar';
 // import tuer from '@/../public/images/IconoTuer.svg'
 // import face from '@/../public/images/IconFace.svg'
 // import check from '@/../public/images/check.svg'
@@ -14,6 +17,7 @@ import imgPlace from '@/../public/images/navbar/tlajo_gris.png'
 // import { FormHookLayout } from '@/components/layouts/FormHookLayout'
 // import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/router'
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 // import { useAuthContext } from '@/context/AuthHook'
 // import { useSystemContext } from '@/context/System'
 // import { MAIN_MODULE } from '@/utils/env'
@@ -36,6 +40,7 @@ export function Navbar({ collapseSidebar, module }: NavbarProps): React.JSX.Elem
   const menuRight = useRef<Menu>(null)
   // const menuRef = useRef<OverlayPanel>(null)
   // const windowsSize = useWindowSize()
+  const [visibleRight, setVisibleRight] = useState(false);
 
   // const items = [{
   //   items: me.topMenu
@@ -92,6 +97,75 @@ export function Navbar({ collapseSidebar, module }: NavbarProps): React.JSX.Elem
                     </a>
                   </div>
                 </div>
+              </div>
+              <div className={styles.module2}>
+                  <div className={styles.mt5px + ' ' + styles.mr108px}>
+                    <Image
+                      src={imgPlace}
+                      alt='logo'
+                      width={60}
+                      height={60}
+                      className={styles.img1}
+                    />
+                  </div>
+                  <Image
+                    src={hambur}
+                    alt='logo'
+                    width={45}
+                    height={45}
+                    onClick={() => setVisibleRight(true)}
+                    className={styles.img2}
+                  />
+                  
+                  <Sidebar 
+                    visible={visibleRight} 
+                    appendTo="self" 
+                    className={styles.sideBar} 
+                    position="right" 
+                    onHide={() => setVisibleRight(false)}
+                    content={({ closeIconRef, hide }) => (
+                      <div>
+                        <Image
+                          src={back}
+                          alt='logo'
+                          width={45}
+                          height={45}
+                          onClick={(e) => hide(e)}
+                          className={styles.img3}
+                        />
+                        <div className={styles.mt25px + ' ' + styles.fs20px}>
+                          <a href="#firstCont" className={styles.links}
+                            onClick={() => setVisibleRight(false)}>
+                            Inicio
+                          </a>
+                        </div>
+                        <div className={styles.mt25px + ' ' + styles.fs20px}>
+                          <a href="#secondCont" className={styles.links}
+                            onClick={() => setVisibleRight(false)}>
+                            Obligados Responsables
+                          </a>
+                        </div>
+                        <div className={styles.mt25px + ' ' + styles.fs20px}>
+                          <a href="#thirdCont" className={styles.links}
+                            onClick={() => setVisibleRight(false)}>
+                            Normatividad
+                          </a>
+                        </div>
+                        <div className={styles.mt25px + ' ' + styles.fs20px}>
+                          <a href="#fourthCont" className={styles.links}
+                            onClick={() => setVisibleRight(false)}>
+                            Tutoriales
+                          </a>
+                        </div>
+                      </div>
+                    )}
+                  >
+                  </Sidebar>
+                  {/* <div className={styles.mt25px + ' ' + styles.mr44px}>
+                    <a href="#firstCont" className={styles.links}>
+                      Inicio
+                    </a>
+                  </div> */}
               </div>
             </div>
 
