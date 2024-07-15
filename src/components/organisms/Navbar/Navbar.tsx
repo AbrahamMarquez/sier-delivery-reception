@@ -46,7 +46,7 @@ export function Navbar({ collapseSidebar, module }: NavbarProps): React.JSX.Elem
   // }
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} id='firstCont'>
       {/* {windowsSize.width !== undefined && windowsSize.width > 767 && */}
         <div className={styles.navbar_container}>
           <div className={styles.navbar_left}>
@@ -72,22 +72,22 @@ export function Navbar({ collapseSidebar, module }: NavbarProps): React.JSX.Elem
                   </div>
                   {/* <p className={styles.mt15px}>{text}</p> */}
                   <div className={styles.mt25px + ' ' + styles.mr44px}>
-                    <a href="https://example.com" className={styles.links}>
+                    <a href="#firstCont" className={styles.links}>
                       Inicio
                     </a>
                   </div>
                   <div className={styles.mt25px + ' ' + styles.mr44px}>
-                    <a href="https://example.com" className={styles.links}>
+                    <a href="#secondCont" className={styles.links}>
                       Obligados Responsables
                     </a>
                   </div>
                   <div className={styles.mt25px + ' ' + styles.mr44px}>
-                    <a href="https://example.com" className={styles.links}>
+                    <a href="#thirdCont" className={styles.links}>
                       Normatividad
                     </a>
                   </div>
                   <div className={styles.mt25px + ' ' + styles.mr44px}>
-                    <a href="https://example.com" className={styles.links}>
+                    <a href="#fourthCont" className={styles.links}>
                       Tutoriales
                     </a>
                   </div>
