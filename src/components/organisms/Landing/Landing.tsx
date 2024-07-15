@@ -283,7 +283,9 @@ export function Landing(): React.JSX.Element {
         <div className={styles.mcontainer}>
           <div className={styles.textBig}>¡Comienza tu entrega!</div>
           <div className={styles.textsmall}>Plazo de entrega : 1- 5 Octubre</div>
-          <div className={styles.bigBlue}>Ingresa ahora</div>
+          <a href="https://sier.tlajomulco.gob.mx/">
+            <div className={styles.bigBlue}>Ingresa ahora</div>
+          </a>
 
         </div>
       </div>
