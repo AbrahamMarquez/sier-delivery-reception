@@ -144,6 +144,9 @@ $icon-width: 30px;
     }
 }
 
+.module2 {
+    display: none;
+}
 .module {
     // width: 810px;
     height: 100%;
@@ -399,6 +402,7 @@ $icon-width: 30px;
 
         .navbar_left {
             height: 100%;
+            width: 100%;
             display: flex;
             align-items: flex-end;
             gap: 0px;
@@ -415,12 +419,45 @@ $icon-width: 30px;
 
             .navbar_item {
                 height: 100%;
-                /* margin: 0 10px; */
+                width: 100%;
+                margin: 0px 10px;
                 display: flex;
                 align-items: flex-end;
 
                 .module {
                     display: none;
+                }
+                .module2 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 25px;
+                    .img1{
+                        // margin-top: 30px;
+                        width: 153px;
+                        height: 45px;
+                    }
+                    .img2{
+                        cursor: pointer;
+                    }
+                    .img3{
+                        width: 33px;
+                        height: 33px;
+                    }
+                }
+                .sideBar{
+                    padding: 20px;
+                    text-align: right;
+                    min-width: 330px;
+                    .mt25px{
+                        margin-top: 35px;
+                    }
+                    .fs20px{
+                        .links{
+                            font-weight: 600;
+                            font-size: 20px;
+                        }
+                    }
                 }
             }
         }

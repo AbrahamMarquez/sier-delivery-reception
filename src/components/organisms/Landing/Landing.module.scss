@@ -719,7 +719,7 @@
                 position: absolute;
                 opacity: 0.4;
                 left: -64px;
-                top: 240px;
+                top: 206px;
                 height: 233px;
                 width: 233px;
             }
@@ -738,7 +738,7 @@
                     overflow: hidden;
                     div{
                         width: 25%;
-                        height: 24px;
+                        height: 13px;
                         opacity: 0.8;
                     }
                     .red{
@@ -758,7 +758,7 @@
         }
 
         .portraits{
-            margin-top: 107px;
+            margin-top: 80px;
             max-width: 1920px;
             display: grid;
             grid-template-columns: 50% 50%;
@@ -794,9 +794,11 @@
                 .displayFlex{
                     padding: 0 20px 0 0;
                     width: 744px;
+                    max-width: 100%;
                     display: flex;
                     margin-bottom: 12px;
                     right: 0;
+                    text-align: left;
                     .img{
                         height: 30px;
                         width: 30px;
@@ -822,7 +824,8 @@
                     position: absolute;
                     width: 103px;
                     height: 118px;
-                    left: 400px;
+                    left: auto;
+                    right: 80px;
                     top: 80px;
                 }
                 .imgFloat2{
@@ -858,6 +861,7 @@
                 .displayFlex{
                     padding: 0 20px 0 0;
                     width: 744px;
+                    max-width: 100%;
                     display: flex;
                     margin-bottom: 12px;
                     // margin-top: 50px;
@@ -1073,7 +1077,7 @@
                 width: 272px;
                 height: 232px;
                 transform: scaleX(-1);
-                margin-top: 198px;
+                margin-top: 169px;
                 z-index: 8;
                 position: absolute;
             }
@@ -1100,7 +1104,7 @@
                 font-size: 24px;
                 color: #7b868c;
                 text-decoration: none solid rgb(123, 134, 140);
-                margin-bottom: 88px;
+                margin-bottom: 100px;
             }
             .bigBlue{
                 width: 230px;
@@ -1110,45 +1114,49 @@
                 background-size: cover;
                 font-family: Roboto;
                 font-size: 24px;
+                font-weight: 600;
                 color: #ffffff;
                 text-decoration: none solid rgb(255, 255, 255);
                 text-align: center;
                 box-shadow: 0px 8px 4px rgba(54,177,205,0.3);
-                padding: 25px;
-                margin-bottom: 100px;
+                padding: 15px;
+                margin-bottom: 120px;
+                margin-left: 192px;
+                margin-right: 100%;
             }
         }
 
         .tutos{
             background-color: #e1e4ed;
-            padding: 390px 0 185px;
+            padding: 240px 0 60px;
             position: relative;
             .divBlue{
                 position: absolute;
-                right: -74px;
-                width: 1029px;
-                height: 146px;
+                right: -174px;
+                width: 629px;
+                height: 72px;
                 border-radius: 100px;
                 background-color: #36b1cd;
                 box-shadow: 5px 6px 5px rgba(54,177,205,0.3);
                 color: white;
-                padding: 42px 150px;
-                font-size: 54px;
-                top: 100px;
+                padding: 22px 50px;
+                font-size: 24px;
+                top: 80px;
             }
             .dFlexy{
-                padding: 0 76px 0 40px;
-                display: flex;
+                padding: 0 30px 0 30px;
+                display: block;
                 justify-content: space-between;
+                text-align: -webkit-center;
                 // gap: 50px;
             }
             .divContain{
-                width: 545px;
-                height: 314px;
+                width: 376px;
+                height: 214px;
                 border-radius: 25px;
                 background: white;
                 box-shadow: 3px 7px 4px rgba(0,0,0,0.2);
-                padding: 20px 90px 40px;
+                padding: 30px 50px 60px;
                 text-align: -webkit-center;
                 position: relative;
                 align-content: center;
@@ -1156,42 +1164,43 @@
                     display: flex;
                     place-content: center;
                     .imgsier{
-                        height: 46px;
-                        width: 110px;
+                        height: 36px;
+                        width: 80px;
                         filter: brightness(0) contrast(0.2);
                     }
                     .pipe{
-                        height: 40px;
-                        width: 2px;
+                        height: 26px;
+                        width: 1px;
                         background-color: #666666;
+                        margin-top: 5px;
                     }
                     .fs30pxTuto{
-                        font-size: 16px;
+                        font-size: 11px;
                         color: #545454;
                         text-transform: uppercase;
                         margin: 12px 10px;
                     }
                 }
                 .fs50px{
-                    font-size: 40px;
+                    font-size: 26px;
                     color: #545454;
-                    margin-top: 30px;
+                    margin-top: 24px;
                 }
                 .lineGray{
-                    margin-top: 14px;
-                    margin-bottom: 14px;
+                    margin-top: 10px;
+                    margin-bottom: 12px;
                     width: 100%;
                     background-color: #666666;
                     height: 2px;
                 }
                 .fs22px{
-                    font-size: 26px;
+                    font-size: 17px;
                     color: #545454;
                     // margin-top: 40px;
                 }
                 .blueBall{
                     position: absolute;
-                    right: -35px;
+                    right: calc(50% - 35px);
                     bottom: -35px;
                     width: 71px;
                     height: 71px;
@@ -1205,7 +1214,7 @@
                 }
             }
             .w545px{
-                width: 545px;
+                width: 100%;
             }
             .downTexts{
                 color: #7b868c;
@@ -1214,31 +1223,33 @@
                 .dFle{
                     display: flex;
                     justify-content: center;
-                    margin-top: 35px;
+                    margin-top: 25px;
                 }
                 .pdfimg{
-                    width: 30px;
-                    height: 30px;
-                    fill: #7b868c;
+                    width: 54px;
+                    height: 54px;
                     margin-left: 10px;
-                    margin-top: 15px;
+                    margin-top: 0px;
                 }
                 .fs32px{
-                    font-size: 32px;
+                    font-size: 24px;
                     font-weight: 700;
+                    margin-top: 70px;
                 }
                 .fs24px{
-                    font-size: 24px;
+                    font-size: 18px;
                     margin-top: 15px;
                 }
                 .fw500{
                     font-weight: 500;
+                    font-size: 24px;
                 }
                 .lineBot{
                     width: 257px;
                     height: 5px;
                     background-color: #7b868c;
                     margin-top: 13px;
+                    margin-bottom: 100px;
                 }
             }
         }
@@ -1246,18 +1257,18 @@
         .bottom{
             background-color: #384045;
             color: white;
-            padding: 37px 95px 38px;
+            padding: 27px 38px;
             display: flex;
             justify-content: space-between;
             .fs30px{
-                font-size: 30px;
+                font-size: 12px;
             }
             .fs20px{
-                font-size: 20px;
+                font-size: 12px;
             }
             .imgTlajo{
-                height: 72px;
-                width: 255px;
+                width: 129px;
+                height: 34px;
             }
         }
     }
