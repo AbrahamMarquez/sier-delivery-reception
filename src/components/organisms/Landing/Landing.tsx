@@ -8,6 +8,11 @@ import imgOc from '@/../public/images/landing/Rectangle.svg'
 import imgOc1 from '@/../public/images/landing/Rectangle(1).svg'
 import imgOc2 from '@/../public/images/landing/Rectangle(2).svg'
 import imgOc3 from '@/../public/images/landing/Rectangle(3).svg'
+import play from '@/../public/images/landing/Icon(24).svg'
+import person from '@/../public/images/landing/Recurso_1.png'
+import sierlogo from '@/../public/images/landing/LogoSIER.png'
+import pdfimg from '@/../public/images/landing/Icon(25).svg'
+import tlajo from '@/../public/images/navbar/tlajo_blanco.png'
 
 import Image from 'next/image'
 
@@ -37,8 +42,7 @@ export function Landing(): React.JSX.Element {
         <div className={styles.video_container}>
           <iframe 
             width="100%" 
-            height="754px" 
-            
+            // height="754px" 
             src="https://www.youtube.com/embed/inRzHtiBz8Q"
             title="Tlajomulco SIER Vol  2 8"
             frameBorder="0"
@@ -46,7 +50,7 @@ export function Landing(): React.JSX.Element {
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           />
-          <div className={styles.colors_container}>
+          <div className={styles.colors_container} id='secondCont'>
             <div className={styles.yellow}></div>
             <div className={styles.green}></div>
             <div className={styles.blue}></div>
@@ -220,7 +224,7 @@ export function Landing(): React.JSX.Element {
           </div>
         </div>
       </div>
-      <div className={styles.colorBalls}>
+      <div className={styles.colorBalls} id='thirdCont'>
         <div className={styles.div1}>
           <div className={styles.divYellow}></div>
           <div className={styles.text}>Normatividad</div>
@@ -231,16 +235,182 @@ export function Landing(): React.JSX.Element {
         <div className={styles.textBig + ' ' + styles.pt0}>
           Aquí están los puntos más importantes:
         </div>
-        <div className={styles.colors_container}>
-          <div className={styles.green}></div>
-          <div className={styles.red}></div>
-          <div className={styles.yellow}></div>
-          <div className={styles.blue}></div>
-          <div className={styles.grey}></div>
+        <div className={styles.h990px}>
+          <div className={styles.colors_container}>
+            <div className={styles.green}>
+              <div className={styles.fs50px}>Contenido del Acta de Entrega</div>
+              <div className={styles.fs30px + ' ' + styles.mt25px}>El acta de entrega-recepción debe incluir información detallada sobre el estado que guardan los recursos humanos, materiales, financieros, y documentales, así como los asuntos en trámite y pendientes de resolución.</div>
+            </div>
+            <div className={styles.red}>
+              <div className={styles.fs40px}>Responsabilidad de los Entrantes</div>
+              <div className={styles.fs25px + ' ' + styles.mt15px}>Los servidores públicos entrantes deben
+                recibir y verificar la información y
+                recursos entregados, y tienen la
+                responsabilidad de reportar cualquier
+                irregularidad detectada.
+              </div>
+            </div>
+            <div className={styles.yellow}>
+              <div className={styles.fs39px}>Firma del Acta</div>
+              <div className={styles.fs20px + ' ' + styles.mt25px}>El acta debe ser firmada por ambas
+                partes, la saliente y la entrante,
+                como constancia de la entrega -
+                recepción de los recursos
+                y la información.
+              </div>
+            </div>
+            <div className={styles.blue}>
+              <div className={styles.fs40px}>Obligación de Entrega</div>
+              <div className={styles.fs26px + ' ' + styles.mt15px}>Los servidores públicos salientes están obligados a entregar la información y los recursos a los servidores públicos entrantes.</div>
+            </div>
+            <div className={styles.grey}>
+              <div className={styles.fs35px}>Documentación Soporte</div>
+              <div className={styles.fs20px + ' ' + styles.mt25px}>Deben adjuntarse a la
+                entrega-recepción los documentos
+                que respalden a información y los
+                recursos reportados.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <div className={styles.begin}>
+        <Image 
+          src={person}
+          alt='ball1'
+          className={styles.imgPerson}
+        />
+        <div className={styles.mcontainer}>
+          <div className={styles.textBig}>¡Comienza tu entrega!</div>
+          <div className={styles.textsmall}>Plazo de entrega : 1- 5 Octubre</div>
+          <div className={styles.bigBlue}>Ingresa ahora</div>
+
+        </div>
+      </div>
+      <div className={styles.tutos} id='fourthCont'>
+        <div className={styles.divBlue}>Tutoriales y manuales</div>
+        <div className={styles.dFlexy}>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Inicio de sesion</div>
+              <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div>
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              <div className={styles.fs32px}>Inicio de sesión</div>
+              <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div>
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              <div className={styles.lineBot}></div>
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Recuperar contraseña</div>
+              <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div>
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              <div className={styles.fs32px}>Recuperar contraseña</div>
+              <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div>
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              <div className={styles.lineBot}></div>
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Activación de anexos</div>
+              <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div>
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div>
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              <div className={styles.lineBot}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.bottom}>
+        <div>
+          <div className={styles.fs30px}>Consulta mas información en:</div>
+          <div className={styles.fs20px}>www.entregarecepcion.tlajomulco.gob.mx</div>
+        </div>
+        <Image 
+          src={tlajo}
+          alt='ball1'
+          className={styles.imgTlajo}
+        />
+      </div>
     </div>
   )
 }
