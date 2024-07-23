@@ -637,6 +637,7 @@
             margin-top: 40px;
             display: flex;
             justify-content: flex-start;
+            cursor: pointer;
             .dFle{
                 display: flex;
                 justify-content: center;
@@ -651,6 +652,47 @@
                 width: 30px;
                 height: 30px;
                 fill: #7b868c;
+            }
+            .fs32px{
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .fs24px{
+                font-size: 24px;
+            }
+            .fw500{
+                font-weight: 500;
+            }
+            .lineBot{
+                width: 257px;
+                height: 5px;
+                background-color: #7b868c;
+                margin-top: 13px;
+            }
+        }
+        .downTexts:hover{
+            color: #36b1cd;
+            text-align: -webkit-center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            .dFle{
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+                height: 40px;
+                width: 257px;
+                border-bottom: 5px solid #36b1cd;
+                margin-bottom: 60px;
+                gap: 16px;
+            }
+            .pdfimg{
+                width: 30px;
+                height: 30px;
+                filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(4325%) hue-rotate(153deg) brightness(86%) contrast(84%);
+                
+                // img{
+                // }
             }
             .fs32px{
                 font-size: 32px;
@@ -793,6 +835,7 @@
             margin-top: 40px;
             display: flex;
             justify-content: flex-start;
+            cursor: pointer;
             .dFle{
                 display: flex;
                 justify-content: center;
@@ -807,6 +850,47 @@
                 width: 30px;
                 height: 30px;
                 fill: #7b868c;
+            }
+            .fs32px{
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .fs24px{
+                font-size: 24px;
+            }
+            .fw500{
+                font-weight: 500;
+            }
+            .lineBot{
+                width: 257px;
+                height: 5px;
+                background-color: #7b868c;
+                margin-top: 13px;
+            }
+        }
+        .downTexts:hover{
+            color: #36b1cd;
+            text-align: -webkit-center;
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+            .dFle{
+                display: flex;
+                justify-content: center;
+                margin-top: 35px;
+                height: 40px;
+                width: 257px;
+                border-bottom: 5px solid #36b1cd;
+                margin-bottom: 60px;
+                gap: 16px;
+            }
+            .pdfimg{
+                width: 30px;
+                height: 30px;
+                filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(4325%) hue-rotate(153deg) brightness(86%) contrast(84%);
+                
+                // img{
+                // }
             }
             .fs32px{
                 font-size: 32px;
@@ -1482,6 +1566,53 @@
                     margin-bottom: 100px;
                 }
             }
+            .downTexts:hover{
+                color: #36b1cd;
+                text-align: -webkit-center;
+                margin-top: 0px;
+                font-size: 18px;
+                display: flex;
+                margin-bottom: 49px;
+                justify-content: flex-start;
+                margin-bottom: 0px;
+                .dFle{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 25px;
+                    margin-left: 25px;
+                    border-bottom: 3px solid #36b1cd;
+                    width: 257px;
+                    align-items: center;
+                    height: 38px;
+                }
+                .pdfimg{
+                    width: 24px;
+                    height: 25px;
+                    margin-left: 10px;
+                    margin-top: 0px;
+                    filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(4325%) hue-rotate(153deg) brightness(86%) contrast(84%);
+                }
+                .fs32px{
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-top: 70px;
+                }
+                .fs24px{
+                    font-size: 18px;
+                    margin-top: 0px;
+                }
+                .fw500{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .lineBot{
+                    width: 257px;
+                    height: 5px;
+                    background-color: #7b868c;
+                    margin-top: 13px;
+                    margin-bottom: 100px;
+                }
+            }
         }
 
         .tutos2{
@@ -1628,6 +1759,53 @@
                     height: 25px;
                     margin-left: 10px;
                     margin-top: 0px;
+                }
+                .fs32px{
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-top: 70px;
+                }
+                .fs24px{
+                    font-size: 18px;
+                    margin-top: 0px;
+                }
+                .fw500{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                .lineBot{
+                    width: 257px;
+                    height: 5px;
+                    background-color: #7b868c;
+                    margin-top: 13px;
+                    margin-bottom: 100px;
+                }
+            }
+            .downTexts:hover{
+                color: #36b1cd;
+                text-align: -webkit-center;
+                margin-top: 0px;
+                font-size: 18px;
+                display: flex;
+                margin-bottom: 49px;
+                justify-content: flex-start;
+                margin-bottom: 0px;
+                .dFle{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 25px;
+                    margin-left: 25px;
+                    border-bottom: 3px solid #36b1cd;
+                    width: 257px;
+                    align-items: center;
+                    height: 38px;
+                }
+                .pdfimg{
+                    width: 24px;
+                    height: 25px;
+                    margin-left: 10px;
+                    margin-top: 0px;
+                    filter: brightness(0) saturate(100%) invert(74%) sepia(8%) saturate(4325%) hue-rotate(153deg) brightness(86%) contrast(84%);
                 }
                 .fs32px{
                     font-size: 24px;
