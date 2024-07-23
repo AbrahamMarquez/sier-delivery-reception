@@ -13,6 +13,11 @@ import person from '@/../public/images/landing/Recurso_1.png'
 import sierlogo from '@/../public/images/landing/LogoSIER.png'
 import pdfimg from '@/../public/images/landing/Icon(25).svg'
 import tlajo from '@/../public/images/navbar/tlajo_blanco.png'
+import personaje from '@/../public/images/landing/personaje.png'
+import personaje2 from '@/../public/images/landing/personaje2.png'
+import mano from '@/../public/images/landing/mano.png'
+import mano2 from '@/../public/images/landing/mano2.png'
+import LogoSIER from '@/../public/images/landing/LogoSIER.png'
 
 import Image from 'next/image'
 
@@ -61,7 +66,7 @@ export function Landing(): React.JSX.Element {
       <div className={styles.portraits}>
         <div className={styles.div1}>
           <div className={styles.divGreen}></div>
-          <div className={styles.text}>Obligados responsables</div>
+          <div className={styles.text}>Sujetos obligados</div>
         </div>
         <div className={styles.div2}>
           <div className={styles.displayFlex}>
@@ -290,13 +295,21 @@ export function Landing(): React.JSX.Element {
         </div>
       </div>
       <div className={styles.tutos} id='fourthCont'>
-        <div className={styles.divBlue}>Tutoriales y manuales</div>
+        <div className={styles.image_title}>
+          <div className={styles.image_person}>
+            <Image src={personaje} alt='' />
+          </div>
+          <div className={styles.hand}>
+            <Image src={mano} alt='' />
+          </div>
+          <div className={styles.divBlue}>Tutoriales Sujeto obligado</div>
+        </div>
         <div className={styles.dFlexy}>
           <div className={styles.w545px}>
             <div className={styles.divContain}>
               <div className={styles.dFlex}>
                 <Image 
-                  src={sierlogo}
+                  src={LogoSIER}
                   alt='ball1'
                   className={styles.imgsier}
                 />
@@ -304,8 +317,6 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
               <div className={styles.fs50px}>Inicio de sesion</div>
-              <div className={styles.lineGray}></div>
-              <div className={styles.fs22px}>Capturista</div>
               <div className={styles.blueBall}>
                 <Image 
                   src={play}
@@ -315,8 +326,8 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              <div className={styles.fs32px}>Inicio de sesión</div>
-              <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div>
+              {/* <div className={styles.fs32px}>Inicio de sesión</div>
+              <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div> */}
               <div className={styles.dFle}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
@@ -325,7 +336,7 @@ export function Landing(): React.JSX.Element {
                   className={styles.pdfimg}
                 />
               </div>
-              <div className={styles.lineBot}></div>
+              {/* <div className={styles.lineBot}></div> */}
             </div>
           </div>
           <div className={styles.w545px}>
@@ -340,8 +351,8 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
               <div className={styles.fs50px}>Recuperar contraseña</div>
-              <div className={styles.lineGray}></div>
-              <div className={styles.fs22px}>Capturista</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
               <div className={styles.blueBall}>
                 <Image 
                   src={play}
@@ -351,8 +362,8 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              <div className={styles.fs32px}>Recuperar contraseña</div>
-              <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div>
+              {/* <div className={styles.fs32px}>Recuperar contraseña</div>
+              <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div> */}
               <div className={styles.dFle}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
@@ -361,7 +372,7 @@ export function Landing(): React.JSX.Element {
                   className={styles.pdfimg}
                 />
               </div>
-              <div className={styles.lineBot}></div>
+              {/* <div className={styles.lineBot}></div> */}
             </div>
           </div>
           <div className={styles.w545px}>
@@ -375,9 +386,9 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Activación de anexos</div>
-              <div className={styles.lineGray}></div>
-              <div className={styles.fs22px}>Capturista</div>
+              <div className={styles.fs50px}>Panel de entrega</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
               <div className={styles.blueBall}>
                 <Image 
                   src={play}
@@ -387,8 +398,8 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              <div className={styles.fs32px}>Activación de anexos</div>
-              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
               <div className={styles.dFle}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
@@ -397,7 +408,306 @@ export function Landing(): React.JSX.Element {
                   className={styles.pdfimg}
                 />
               </div>
-              <div className={styles.lineBot}></div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Gestión de capturistas</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Selección y captura de anexos</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Foliado y acta</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.tutos2} id='fourthCont'>
+        <div className={styles.image_title}>
+          <div className={styles.image_person}>
+            <Image src={personaje2} alt='' />
+          </div>
+          <div className={styles.hand}>
+            <Image src={mano2} alt='' />
+          </div>
+          <div className={styles.divBlue}>Tutoriales Capturistas</div>
+        </div>
+        <div className={styles.dFlexy}>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={LogoSIER}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Inicio de sesion</div>
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Inicio de sesión</div>
+              <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Recuperar contraseña</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Recuperar contraseña</div>
+              <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Panel de entrega</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Selección y captura de anexos</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Foliado y acta</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
             </div>
           </div>
         </div>
