@@ -18,10 +18,20 @@ import personaje2 from '@/../public/images/landing/personaje2.png'
 import mano from '@/../public/images/landing/mano.png'
 import mano2 from '@/../public/images/landing/mano2.png'
 import LogoSIER from '@/../public/images/landing/LogoSIER.png'
+// import videoSrc from '@/../public/video/video.mp4'
 
 import Image from 'next/image'
 
 export function Landing(): React.JSX.Element {
+
+  // const handlePlay = () => {
+  //   const video = document.querySelector('.videoPlayer') as HTMLVideoElement | null;
+  //   if (video && video.paused) {
+  //     video.play(); // Inicia la reproducción del video si está pausado
+  //   } else if (video) {
+  //     video.pause(); // Pausa la reproducción del video si está reproduciéndose
+  //   }
+  // };
 
   return (
     <div className={styles.landing}>
@@ -45,7 +55,12 @@ export function Landing(): React.JSX.Element {
           />
         </div>
         <div className={styles.video_container}>
-          <iframe 
+        <video width='100%' className={styles.videoPlayer} controls autoPlay>
+          <source src='/video/video.mp4' type='video/mp4' />
+          Tu navegador no soporta el elemento de video.
+        </video>
+        {/* <button className="playButton" onClick={handlePlay}>▶️</button> */}
+          {/* <iframe 
             width="100%" 
             // height="754px" 
             src="https://www.youtube.com/embed/inRzHtiBz8Q"
@@ -54,7 +69,7 @@ export function Landing(): React.JSX.Element {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
-          />
+          /> */}
           <div className={styles.colors_container} id='secondCont'>
             <div className={styles.yellow}></div>
             <div className={styles.green}></div>
