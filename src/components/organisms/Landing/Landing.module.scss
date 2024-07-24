@@ -561,9 +561,9 @@
             }
         }
         .dFlexy{
-            padding: 0 76px 0 40px;
+            padding: 0 50px 0 50px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             // gap: 50px;
             flex-wrap: wrap;
         }
@@ -759,11 +759,11 @@
             }
         }
         .dFlexy{
-            padding: 0 76px 0 40px;
+            padding: 0 50px 0 70px;
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            gap: 83px;
+            gap: 70px;
         }
         .divContain{
             width: 545px;
