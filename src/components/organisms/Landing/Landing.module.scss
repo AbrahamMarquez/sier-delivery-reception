@@ -158,6 +158,9 @@
             z-index: 3;
             margin: 42px 107px 0px;
             position: relative;
+            .videoPlayer{
+                height: 754px;
+            }
             iframe{
                 height: 754px;
             }
@@ -1001,6 +1004,9 @@
                 z-index: 3;
                 margin: 42px 27px 0px;
                 position: relative;
+                .videoPlayer{
+                    height: 500px;
+                }
                 iframe{
                     height: 579px;
                 }
