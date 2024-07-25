@@ -33,6 +33,16 @@ export function Landing(): React.JSX.Element {
   //   }
   // };
 
+  const openVideoSession = () => {
+    const videoUrl = '/video/Sujeto obligado - Primer inicio de sesion.mp4'; // Ruta al video, ajusta según tu proyecto
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoRecovery = () => {
+    const videoUrl = '/video/Sujeto obligado - Recuperar contraseña.mp4'; // Ruta al video, ajusta según tu proyecto
+    window.open(videoUrl, '_blank');
+  }
+
   return (
     <div className={styles.landing}>
       <div className={styles.balls}>
@@ -332,7 +342,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
               <div className={styles.fs50px}>Inicio de sesion</div>
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoSession}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -368,7 +378,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Recuperar contraseña</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoRecovery}>
                 <Image 
                   src={play}
                   alt='ball1'
