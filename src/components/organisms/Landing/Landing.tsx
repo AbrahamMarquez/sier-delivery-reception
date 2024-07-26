@@ -34,12 +34,17 @@ export function Landing(): React.JSX.Element {
   // };
 
   const openVideoSession = () => {
-    const videoUrl = '/video/Sujeto obligado - Primer inicio de sesion.mp4'; // Ruta al video, ajusta según tu proyecto
+    const videoUrl = '/video/Inicio de sesión sujeto obligado .mp4'; // Ruta al video, ajusta según tu proyecto
     window.open(videoUrl, '_blank');
   }
 
   const openVideoRecovery = () => {
-    const videoUrl = '/video/Sujeto obligado - Recuperar contraseña.mp4'; // Ruta al video, ajusta según tu proyecto
+    const videoUrl = '/video/Recuperar contraseña sujeto obligado .mp4'; // Ruta al video, ajusta según tu proyecto
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoGoogle = () => {
+    const videoUrl = '/video/Descarga e Instalacion de Google Chrome.mp4'; // Ruta al video, ajusta según tu proyecto
     window.open(videoUrl, '_blank');
   }
 
@@ -714,6 +719,42 @@ export function Landing(): React.JSX.Element {
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
               <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Descargar google</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall} onClick={openVideoGoogle}>
                 <Image 
                   src={play}
                   alt='ball1'
