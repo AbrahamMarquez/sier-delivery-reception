@@ -33,18 +33,111 @@ export function Landing(): React.JSX.Element {
   //   }
   // };
 
+
+  ///Videos - Sujetos obligados //////
   const openVideoSession = () => {
-    const videoUrl = '/video/Inicio de sesión sujeto obligado .mp4'; // Ruta al video, ajusta según tu proyecto
+    const videoUrl = '/video/Inicio de sesión sujeto obligado .mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoRecovery = () => {
-    const videoUrl = '/video/Recuperar contraseña sujeto obligado .mp4'; // Ruta al video, ajusta según tu proyecto
+    const videoUrl = '/video/Recuperar contraseña sujeto obligado .mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoGoogle = () => {
-    const videoUrl = '/video/Descarga e Instalacion de Google Chrome.mp4'; // Ruta al video, ajusta según tu proyecto
+    const videoUrl = '/video/Descarga e Instalacion de Google Chrome.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoDeliveryPanel = () => {
+    const videoUrl = '/video/Sujeto obligado - Panel de entrega.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoCaptureManagement = () => {
+    const videoUrl = '/video/Sujeto obligado - Gestion de capturistas.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoCaptureAnnexes = () => {
+    const videoUrl = '/video/Sujeto obligado - Seleccion y captura de anexos.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  ////Videos - Capturista////////
+
+  const openVideoSessionCapturist = () => {
+    const videoUrl = '/video/capturist/Capturista - Inicio de sesion.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoRecoveryCapturist= () => {
+    const videoUrl = '/video/capturist/Recuperar contraseña Capturista  (2).mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+
+  ///PDF - Sujetos obligados //////
+  const openPdfSession = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Primer Ingreso.pdf';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfRecovery  = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Recuperar Contraseña.pdf';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfDeliveryPanel = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Panel de Entregas.pdf';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfCaptureManagement  = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Gestion de capturistas.pdf';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfCaptureAnnexes = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Anexos.pdf';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfPanelPostsDeliver  = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Panel de Puestos a Entregar.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  ////PDF - Capturista////////
+
+  const openPdfSessionCapturist = () => {
+    const videoUrl = '/video/capturist/Capturista - Primer Ingreso.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfRecoveryCapturist  = () => {
+    const videoUrl = '/video/capturist/Capturista - Recuperar Contraseña.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfDeliveryPanelCapturist  = () => {
+    const videoUrl = '/video/capturist/Capturista - Panel de Entregas.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfCaptureAnnexess  = () => {
+    const videoUrl = '/video/capturist/Capturista - Anexos.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfPanelPostsDeliverCapturist  = () => {
+    const videoUrl = '/video/capturist/Capturista - Panel de Puestos a Entregar.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfPanelDeliver  = () => {
+    const videoUrl = '/video/capturist/Capturista - Panel de Entregas.pdf'; 
     window.open(videoUrl, '_blank');
   }
 
@@ -358,7 +451,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Inicio de sesión</div>
               <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfSession}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -394,7 +487,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Recuperar contraseña</div>
               <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfRecovery}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -419,7 +512,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Panel de entrega</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoDeliveryPanel}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -430,7 +523,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfDeliveryPanel}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -455,7 +548,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Gestión de capturistas</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoCaptureManagement}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -466,7 +559,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfCaptureManagement}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -491,7 +584,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Selección y captura de anexos</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoCaptureAnnexes}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -502,7 +595,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfCaptureAnnexes}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -524,9 +617,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Foliado y acta</div>
-              {/* <div className={styles.lineGray}></div>
-              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.fs50px}>Panel de Puestos a Entregar</div>
               <div className={styles.blueBall}>
                 <Image 
                   src={play}
@@ -536,9 +627,7 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              {/* <div className={styles.fs32px}>Activación de anexos</div>
-              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfPanelPostsDeliver}> 
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -546,7 +635,6 @@ export function Landing(): React.JSX.Element {
                   className={styles.pdfimg}
                 />
               </div>
-              {/* <div className={styles.lineBot}></div> */}
             </div>
           </div>
         </div>
@@ -574,7 +662,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
               <div className={styles.fs50px}>Inicio de sesion</div>
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoSessionCapturist}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -585,7 +673,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Inicio de sesión</div>
               <div className={styles.fs24px}>Video tutorial para un primer inicio de sesión como usuario registrado en el sistema</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfSessionCapturist}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -610,7 +698,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Recuperar contraseña</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoRecoveryCapturist}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -621,7 +709,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Recuperar contraseña</div>
               <div className={styles.fs24px}>Video tutorial del proceso de recuperar contraseña</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfRecoveryCapturist}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -657,7 +745,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfDeliveryPanelCapturist}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -693,7 +781,7 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfCaptureAnnexess}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -715,7 +803,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Foliado y acta</div>
+              <div className={styles.fs50px}>Panel de Puestos a Entregar</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
               <div className={styles.blueBall}>
@@ -729,7 +817,43 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfPanelPostsDeliverCapturist}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Panel de Entregas</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle} onClick={openPdfPanelDeliver}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
