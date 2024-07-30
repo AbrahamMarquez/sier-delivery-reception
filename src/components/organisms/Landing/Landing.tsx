@@ -104,6 +104,11 @@ export function Landing(): React.JSX.Element {
     window.open(videoUrl, '_blank');
   }
 
+  const openPdfPanelPostsDeliver  = () => {
+    const videoUrl = '/video/obligatedSubject/Sujeto obligado - Panel de Puestos a Entregar.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
   ////PDF - Capturista////////
 
   const openPdfSessionCapturist = () => {
@@ -123,6 +128,16 @@ export function Landing(): React.JSX.Element {
 
   const openPdfCaptureAnnexess  = () => {
     const videoUrl = '/video/capturist/Capturista - Anexos.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfPanelPostsDeliverCapturist  = () => {
+    const videoUrl = '/video/capturist/Capturista - Panel de Puestos a Entregar.pdf'; 
+    window.open(videoUrl, '_blank');
+  }
+
+  const openPdfPanelDeliver  = () => {
+    const videoUrl = '/video/capturist/Capturista - Panel de Entregas.pdf'; 
     window.open(videoUrl, '_blank');
   }
 
@@ -602,9 +617,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Foliado y acta</div>
-              {/* <div className={styles.lineGray}></div>
-              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.fs50px}>Panel de Puestos a Entregar</div>
               <div className={styles.blueBall}>
                 <Image 
                   src={play}
@@ -614,9 +627,7 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              {/* <div className={styles.fs32px}>Activación de anexos</div>
-              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfPanelPostsDeliver}> 
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -624,7 +635,6 @@ export function Landing(): React.JSX.Element {
                   className={styles.pdfimg}
                 />
               </div>
-              {/* <div className={styles.lineBot}></div> */}
             </div>
           </div>
         </div>
@@ -793,7 +803,7 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Foliado y acta</div>
+              <div className={styles.fs50px}>Panel de Puestos a Entregar</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
               <div className={styles.blueBall}>
@@ -807,7 +817,43 @@ export function Landing(): React.JSX.Element {
             <div className={styles.downTexts}>
               {/* <div className={styles.fs32px}>Activación de anexos</div>
               <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
-              <div className={styles.dFle}>
+              <div className={styles.dFle} onClick={openPdfPanelPostsDeliverCapturist}>
+                <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
+                <Image 
+                  src={pdfimg}
+                  alt='ball1'
+                  className={styles.pdfimg}
+                />
+              </div>
+              {/* <div className={styles.lineBot}></div> */}
+            </div>
+          </div>
+          <div className={styles.w545px}>
+            <div className={styles.divContain}>
+              <div className={styles.dFlex}>
+                <Image 
+                  src={sierlogo}
+                  alt='ball1'
+                  className={styles.imgsier}
+                />
+                <div className={styles.pipe}></div>
+                <div className={styles.fs30pxTuto}>Tutoriales</div>
+              </div>
+              <div className={styles.fs50px}>Panel de Entregas</div>
+              {/* <div className={styles.lineGray}></div>
+              <div className={styles.fs22px}>Capturista</div> */}
+              <div className={styles.blueBall}>
+                <Image 
+                  src={play}
+                  alt='ball1'
+                  className={styles.img18}
+                />
+              </div>
+            </div>
+            <div className={styles.downTexts}>
+              {/* <div className={styles.fs32px}>Activación de anexos</div>
+              <div className={styles.fs24px}>Video tutorial del proceso para activar un anexo</div> */}
+              <div className={styles.dFle} onClick={openPdfPanelDeliver}>
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
