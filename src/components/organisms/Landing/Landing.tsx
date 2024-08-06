@@ -36,44 +36,59 @@ export function Landing(): React.JSX.Element {
 
   ///Videos - Sujetos obligados //////
   const openVideoSession = () => {
-    const videoUrl = '/video/Inicio de sesión sujeto obligado .mp4';
+    const videoUrl = '/video/obligatedSubject/video/Inicio de sesión sujeto obligado  (2).mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoRecovery = () => {
-    const videoUrl = '/video/Recuperar contraseña sujeto obligado .mp4';
-    window.open(videoUrl, '_blank');
-  }
-
-  const openVideoGoogle = () => {
-    const videoUrl = '/video/Descarga e Instalacion de Google Chrome.mp4';
+    const videoUrl = '/video/obligatedSubject/video/Recuperar contraseña sujeto obligado  (1).mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoDeliveryPanel = () => {
-    const videoUrl = '/video/Sujeto obligado - Panel de entrega.mp4';
+    const videoUrl = '/video/obligatedSubject/video/Panel de sujeto obligado  (1).mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoCaptureManagement = () => {
-    const videoUrl = '/video/Sujeto obligado - Gestion de capturistas.mp4';
+    const videoUrl = '/video/obligatedSubject/video/Registro de Capturistas sujeto obligado .mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoCaptureAnnexes = () => {
-    const videoUrl = '/video/Sujeto obligado - Seleccion y captura de anexos.mp4';
+    const videoUrl = '/video/obligatedSubject/video/Selección y captura de anexos.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoobligatedSubjectGoogle = () => {
+    const videoUrl = '/video/obligatedSubject/video/Descarga e Instalacion de Google Chrome (1).mp4';
     window.open(videoUrl, '_blank');
   }
 
   ////Videos - Capturista////////
 
   const openVideoSessionCapturist = () => {
-    const videoUrl = '/video/capturist/Capturista - Inicio de sesion.mp4';
+    const videoUrl = '/video/capturist/videos/_Inicio de sesión capturista.mp4';
     window.open(videoUrl, '_blank');
   }
 
   const openVideoRecoveryCapturist= () => {
-    const videoUrl = '/video/capturist/Recuperar contraseña Capturista  (2).mp4';
+    const videoUrl = '/video/capturist/videos/Recuperar contraseña Capturista .mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoPanelDeliveryCapturist = () => {
+    const videoUrl = '/video/capturist/videos/Panel de Capturista (3).mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoAnnexesCapturist = () => {
+    const videoUrl = '/video/capturist/videos/Capturista Selección y captura de anexos.mp4';
+    window.open(videoUrl, '_blank');
+  }
+
+  const openVideoGoogle = () => {
+    const videoUrl = '/video/capturist/videos/Descarga e Instalacion de Google Chrome.mp4';
     window.open(videoUrl, '_blank');
   }
 
@@ -617,8 +632,8 @@ export function Landing(): React.JSX.Element {
                 <div className={styles.pipe}></div>
                 <div className={styles.fs30pxTuto}>Tutoriales</div>
               </div>
-              <div className={styles.fs50px}>Panel de Puestos a Entregar</div>
-              <div className={styles.blueBall}>
+              <div className={styles.fs50px}>Descargar google</div>
+              <div className={styles.blueBall} onClick={openVideoobligatedSubjectGoogle}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -627,7 +642,9 @@ export function Landing(): React.JSX.Element {
               </div>
             </div>
             <div className={styles.downTexts}>
-              <div className={styles.dFle} onClick={openPdfPanelPostsDeliver}> 
+              <div className={styles.dFle}  
+              
+              > 
                 <div className={styles.fs24px + ' ' + styles.fw500}>Ver manual</div>
                 <Image 
                   src={pdfimg}
@@ -734,7 +751,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Panel de entrega</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoPanelDeliveryCapturist}>
                 <Image 
                   src={play}
                   alt='ball1'
@@ -770,7 +787,7 @@ export function Landing(): React.JSX.Element {
               <div className={styles.fs50px}>Selección y captura de anexos</div>
               {/* <div className={styles.lineGray}></div>
               <div className={styles.fs22px}>Capturista</div> */}
-              <div className={styles.blueBall}>
+              <div className={styles.blueBall} onClick={openVideoAnnexesCapturist}>
                 <Image 
                   src={play}
                   alt='ball1'
